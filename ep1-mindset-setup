@@ -1,0 +1,66 @@
+# Episode 1: The Analytics Mindset & Environment Setup
+
+Selamat datang di Episode 1 dari **Data Analytics Beginner Series**! Sebelum kita menyentuh baris kode Python atau mengolah jutaan baris data, kita harus memahami satu hal krusial: *Data Analyst bukanlah seorang penginput kode, melainkan seorang Problem Solver.*
+
+Di episode pertama ini, kita akan membedah bagaimana cara berpikir seorang analyst profesional dalam menghadapi masalah bisnis dan menyiapkan "senjata" (environment) yang akan kita gunakan selama series ini.
+
+---
+
+##  Part 1: The Analytics Mindset (Framing the Problem)
+
+Banyak pemula gagal karena mereka langsung melakukan coding tanpa tahu apa yang ingin dicari. Seorang professional analyst selalu memulai prosesnya dari **Pertanyaan Bisnis**, bukan dari datanya.
+
+### Kerangka Kerja: 5 Whys & MECE Framework
+Untuk mengubah masalah yang abstrak menjadi data problem yang konkret, kita bisa menggunakan pendekatan terstruktur:
+
+1. **Identify the Core Problem:** Misal, "Pendapatan perusahaan menurun bulan ini."
+2. **Break it Down (MECE - Mutually Exclusive, Collectively Exhaustive):** Jangan menebak secara acak. Bagi masalah menjadi komponen yang tidak saling tumpang tindih:
+   * Apakah karena **Jumlah Transaksi** yang turun?
+   * Atau karena **Rata-rata Nilai Transaksi (Average Ticket Size)** yang mengecil?
+3. **Formulate Hypotheses:** 
+   * *Hipotesis A:* Pengguna baru berkurang karena biaya iklan digital naik.
+   * *Hipotesis B:* Pengguna lama berhenti membeli karena ada kompetitor baru.
+
+Dari hipotesis inilah kita baru tahu **data apa yang perlu kita kumpulkan** dan **analisis apa yang harus dilakukan**.
+
+---
+
+##  Part 2: Setup Environment (The Minimalist & Industrial Standard)
+
+Kita akan menggunakan ekosistem yang paling efisien, bersih, dan diakui secara industri untuk pemula maupun profesional.
+
+### 1. Google Colab (Untuk Eksekusi & Eksperimen)
+Kita memilih Google Colab karena sifatnya yang *Cloud-based* dan *Zero-Setup*. 
+* **Kenapa Colab?** Anda tidak perlu pusing memikirkan instalasi Python, Jupyter Notebook, atau *library* yang bentrok di komputer lokal Anda. Semuanya berjalan di browser.
+* **Akses:** Cukup buka [colab.research.google.com](https://colab.research.google.com/) menggunakan akun Google Anda.
+
+### 2. GitHub (Rumah Portofolio & Version Control)
+Setiap baris analisis yang kita buat harus terdokumentasi dengan baik agar bisa di-review oleh tim, rekruter, atau kolaborator riset.
+* **Git & GitHub** digunakan untuk menyimpan *history* perubahan kode kita.
+* Pastikan Anda sudah membuat repositori ini dengan struktur folder yang modular.
+
+---
+
+##  Part 3: Studi Kasus Pendek (Latihan Berpikir Terstruktur)
+
+Sebelum masuk ke Episode 2 (Data Cleaning), mari kita simulasikan cara berpikir analitis melalui skenario di bawah ini.
+
+**Skenario Bisnis:**  
+Sebuah perusahaan *E-Commerce* lokal menyadari bahwa 40% pengguna memasukkan barang ke keranjang belanja (*Add to Cart*), tetapi **tidak pernah menyelesaikan pembayaran** (*Cart Abandonment*).
+
+**Tugas Analyst (Sebelum Coding):**  
+Buat daftar 3 pertanyaan tajam yang harus kita ajukan kepada data untuk menyelesaikan masalah ini.
+
+| No | Pertanyaan Analitis | Data yang Dibutuhkan | Potensi Solusi Bisnis |
+| :--- | :--- | :--- | :--- |
+| 1 | Di halaman mana pengguna paling banyak *drop-off* (keluar)? | Data log aktivitas user (*clickstream data*) | Memperbaiki UI/UX halaman pembayaran jika terlalu rumit. |
+| 2 | Apakah metode pembayaran tertentu memiliki tingkat kegagalan lebih tinggi? | Data transaksi + Kolom *Payment Method* | Integrasi dengan *payment gateway* baru yang lebih stabil. |
+| 3 | Apakah ongkos kirim menjadi pemicu pengguna batal membeli? | Data koordinat user vs ongkos kirim | Membuat program promo *free shipping* dengan batas minimum belanja. |
+
+---
+
+## 🏁 Apa Langkah Selanjutnya?
+
+Sekarang mentallity Anda sudah terbentuk dan senjata Anda sudah siap. Di **Episode 2**, kita akan mulai menerima dataset rias (kotor) pertama kita di Google Colab dan belajar seni melakukan **Data Wrangling & Cleaning** menggunakan Python Pandas. 
+
+*Stay curious, stay analytical!*
